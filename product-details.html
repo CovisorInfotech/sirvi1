@@ -25,9 +25,9 @@
         .head-phone{
             position: fixed;
     width: 100%;
-    margin-top: -1px;
+    margin-top: 27px;
     z-index: 200;
-    background-color: white;
+    background-color: #f28a00;
 }
 
         .serch-broder{
@@ -363,7 +363,7 @@ img{width: 100%;}
 	  display: block;
 	}
 
-.phone-pc {
+    .phone-pc {
     position: fixed;
     background-color: #232323cc;
     top: 0;
@@ -375,13 +375,17 @@ img{width: 100%;}
     z-index: 4;
     height: 100%;
     width: 100%;
-    animation: animateleft 0.4s;
+    margin-top: 70px;
     z-index: 300;
+    /* animation: animateleft 0.4s; */
+    transform: scale(1);
+    transition: opacity .4s cubic-bezier(0,1,.4,1),transform .4s cubic-bezier(.18,1.25,.4,1),visibility .4s linear;
+
 }
 
 .open-menu{
     margin-left: 0px;
-    width: 86%;
+    width: 100%;
     right: 1px;
     height: 100vh;
     z-index: 99;
@@ -469,7 +473,7 @@ img{width: 100%;}
     }
     @media only screen and (max-width: 600px) 
     {
-    .extra-off{border-bottom: 1px solid white;padding-bottom: 4px;background-color: #f26000;position: fixed; z-index: 200; width: 100%;   margin-top: 11px;} 
+    .extra-off{border-bottom: 1px solid white;padding-bottom: 4px;background-color: #f26000;position: fixed; z-index: 200; width: 100%;   margin-top: 0px;} 
     }
     
             </style>
@@ -2060,23 +2064,23 @@ img{width: 100%;}
                                 
                                 <div class="mt-4" style="border: 1px #999 dashed;width: 100%;padding: 2% 3% 0% 4%;border-radius: 12px;margin-bottom: 1%;margin-top: 1%;">
                                     <div class="row">
-                                        <div class="col-2 col-lg-2">
+                                        <div class="col-6 col-lg-2">
                                             <center><img src="images/fr.jpg" alt="" style="width: 60%;"></center>
                                             <p class="text-center">Free shipping above Rs 950</p>
                                         </div>
-                                        <div class="col-2 col-lg-2">
+                                        <div class="col-6 col-lg-2">
                                             <center><img src="images/wit.jpg" alt="" style="width: 60%;"></center>
                                             <p class="text-center">Within 48 hours Fast Delievery</p>
                                         </div>
-                                        <div class="col-2 col-lg-2">
+                                        <div class="col-6 col-lg-2">
                                             <center><img src="images/se.jpg" alt="" style="width: 60%;"></center>
                                             <p class="text-center">Secure Payments</p>
                                         </div>
-                                        <div class="col-2 col-lg-2">
+                                        <div class="col-6 col-lg-2">
                                             <center><img src="images/pr.jpg" alt="" style="width: 60%;"></center>
                                             <p class="text-center">Produce of India</p>
                                         </div>
-                                        <div class="col-2 col-lg-2">
+                                        <div class="col-6 col-lg-2">
                                             <center><img src="images/ho.jpg" alt="" style="width: 60%;"></center>
                                             <p class="text-center">Holestic Wellbeing</p>
                                         </div>

@@ -19,8 +19,8 @@
         .head-phone{position: fixed;
     width: 100%;
     z-index: 200;
-    margin-top: -1px;
-    background-color: white;
+    margin-top: 27px;
+    background-color: #f28a00;
 }
 
         .serch-broder{
@@ -357,7 +357,7 @@ img{width: 100%;}
 	  display: block;
 	}
 
-.phone-pc {
+    .phone-pc {
     position: fixed;
     background-color: #232323cc;
     top: 0;
@@ -369,13 +369,17 @@ img{width: 100%;}
     z-index: 4;
     height: 100%;
     width: 100%;
-    animation: animateleft 0.4s;
+    margin-top: 70px;
     z-index: 300;
+    /* animation: animateleft 0.4s; */
+    transform: scale(1);
+    transition: opacity .4s cubic-bezier(0,1,.4,1),transform .4s cubic-bezier(.18,1.25,.4,1),visibility .4s linear;
+
 }
 
 .open-menu{
     margin-left: 0px;
-    width: 86%;
+    width: 100%;
     right: 1px;
     height: 100vh;
     z-index: 99;
@@ -463,7 +467,7 @@ img{width: 100%;}
     }
     @media only screen and (max-width: 600px) 
     {
-    .extra-off{border-bottom: 1px solid white;padding-bottom: 4px;background-color: #f26000;position: fixed; z-index: 200; width: 100%;   margin-top: 11px;} 
+    .extra-off{border-bottom: 1px solid white;padding-bottom: 4px;background-color: #f26000;position: fixed; z-index: 200; width: 100%;   margin-top: 0px;} 
     }
     
             </style>
