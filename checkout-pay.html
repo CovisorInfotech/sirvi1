@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- OwlCarousel2 -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>   
+<style>
+.product-thumbnail__quantity {
+    font-size: 0.8571428571em;
+    font-weight: 500;
+    line-height: 1.75em;
+    /* white-space: nowrap; */
+    text-align: center;
+    border-radius: 1.75em;
+    background-color: rgba(114,114,114,0.9);
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 1.75em;
+    height: 1.75em;
+    padding: 0 0.5833333333em;
+    position: absolute;
+    /* right: -0.75em; */
+    /* top: -0.75em; */
+    z-index: 3;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+@media only screen and(min-width: 600px){
+    .banner {
+    padding-top: 6em;
+    padding-bottom: 2em;
+}
+}
+
+.banner {
+    padding: 1.5em 0;
+    background: #333 url(images/checkout_logo_1.png?58567) center center;
+    background-size: cover;
+   
+}
+</style>
+
+
+<div class="container">
+<header class="banner" data-header="" role="banner">
+<div class="wrap">
+</div>
+</header>
+</div>
+
+<section class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+            <div><p><span><a class="" href="cart.html">Cart</a></span> <span><i class="fa-solid fa-chevron-right"></i></span> <span>Information</span> <span><i class="fa-solid fa-chevron-right"></i></span> <span>Payment</span></p></div>    
+              <div>
+                <div>
+                    <h4>Payment</h4>
+                    <p>Please pay online for Safe & Contactless delivery</p>
+                </div>
+                <style>
+                    .payment-icon--visa {
+    background-image: url(images/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg),none;
+}
+.payment-icon--master {
+    background-image: url(images/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg),none;
+}
+.payment-icon--rupay {
+    background-image: url(images/rupay-7dd8b2a3c63957a0174f9ad530376abbac88ed8baeb14d78e7887eec4208e63d.svg),none;
+}
+.payment-icon--paytm {
+    background-image: url(images/paytm-ea638dba9d6e858f0f6c38d0b744ab791cabe2016309511ada28a5da51140909.svg),none;
+}
+.payment-icon {
+    border-radius: 0.2142857143em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 24px;
+}
+                </style>
+                <form>
+                    <div class="row">
+                    <div class="mb-3 col-md-12 col-lg-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <div class="accordion-header" id="headingOne">
+                                <div class="accordion-button row m-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="col-md-6 col-lg-6 p-0">
+                                        <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> Razorpay Secure (UPI, Cards, Wallets, NetBanking) </label> </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="payment-icon payment-icon--visa" data-payment-icon="visa" aria-current="false"> <span class="visually-hidden"> Visa, </span> </li>
+                                            <li class="payment-icon payment-icon--master" data-payment-icon="master" aria-current="false"> <span class="visually-hidden"> Mastercard, </span> </li>
+                                            <li class="payment-icon payment-icon--rupay" data-payment-icon="rupay" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                            <li class="payment-icon payment-icon--paytm" data-payment-icon="paytm" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                            <li class="payment-icon-list__more" style="    margin-left: 8px;"> <small class="content-box__small-text"> and more… </small> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-4">
+                                    <div><center><svg xmlns="http://www.w3.org/2000/svg" width="163" height="80.9" viewBox="-252.3 356.1 163 80.9" enable-background="new -252.3 356.1 163 80.9"><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-108.9 404.1v30c0 1.1-.9 2-2 2h-120.1c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1" fill="none"/><circle fill="#B2B2B2" cx="-227.8" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-222.2" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-216.6" cy="361.9" r="1.8"/><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-128.7 400.1h36.7m-3.6-4.1l4 4.1-4 4.1" fill="none"/></svg></center></div>
+                                    <p class="text-center">After clicking “Complete order”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <div class="accordion-header" id="headingTwo">
+                                <div class="accordion-button row m-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="col-md-6 col-lg-6 p-0">
+                                        <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> Simpl Pay-In-3 </label> </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="payment-icon payment-icon--visa" data-payment-icon="visa" aria-current="false"> <span class="visually-hidden"> Visa, </span> </li>
+                                            <li class="payment-icon payment-icon--master" data-payment-icon="master" aria-current="false"> <span class="visually-hidden"> Mastercard, </span> </li>
+                                            
+                                            <li class="payment-icon-list__more" style="    margin-left: 8px;"> <small class="content-box__small-text"> and more… </small> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-4">
+                                    <div><center><svg xmlns="http://www.w3.org/2000/svg" width="163" height="80.9" viewBox="-252.3 356.1 163 80.9" enable-background="new -252.3 356.1 163 80.9"><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-108.9 404.1v30c0 1.1-.9 2-2 2h-120.1c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1" fill="none"/><circle fill="#B2B2B2" cx="-227.8" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-222.2" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-216.6" cy="361.9" r="1.8"/><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-128.7 400.1h36.7m-3.6-4.1l4 4.1-4 4.1" fill="none"/></svg></center></div>
+                                    <p class="text-center">After clicking “Complete order”, you will be redirected to Simpl Pay-In-3 to complete your purchase securely.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <div class="accordion-header" id="headingThree">
+                                <div class="accordion-button row m-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="col-md-6 col-lg-6 p-0">
+                                        <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> Paytm Payment Gateway </label> </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="payment-icon payment-icon--visa" data-payment-icon="visa" aria-current="false"> <span class="visually-hidden"> Visa, </span> </li>
+                                            <li class="payment-icon payment-icon--master" data-payment-icon="master" aria-current="false"> <span class="visually-hidden"> Mastercard, </span> </li>
+                                            <li class="payment-icon payment-icon--rupay" data-payment-icon="rupay" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                            <li class="payment-icon payment-icon--paytm" data-payment-icon="paytm" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                            <li class="payment-icon-list__more" style="    margin-left: 8px;"> <small class="content-box__small-text"> and more… </small> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-4">
+                                    <div><center><svg xmlns="http://www.w3.org/2000/svg" width="163" height="80.9" viewBox="-252.3 356.1 163 80.9" enable-background="new -252.3 356.1 163 80.9"><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-108.9 404.1v30c0 1.1-.9 2-2 2h-120.1c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1" fill="none"/><circle fill="#B2B2B2" cx="-227.8" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-222.2" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-216.6" cy="361.9" r="1.8"/><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-128.7 400.1h36.7m-3.6-4.1l4 4.1-4 4.1" fill="none"/></svg></center></div>
+                                    <p class="text-center">After clicking “Complete order”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingfour">
+                                  <div class="accordion-button row m-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                      <div class="col-md-6 col-lg-6 p-0">
+                                          <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> Cash on Delivery </label> </div>
+                                      </div>
+                                      <div class="col-md-6 col-lg-6">
+                                          <!-- <ul class="list-unstyled d-flex">
+                                              <li class="payment-icon payment-icon--visa" data-payment-icon="visa" aria-current="false"> <span class="visually-hidden"> Visa, </span> </li>
+                                              <li class="payment-icon payment-icon--master" data-payment-icon="master" aria-current="false"> <span class="visually-hidden"> Mastercard, </span> </li>
+                                              <li class="payment-icon payment-icon--rupay" data-payment-icon="rupay" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                              <li class="payment-icon payment-icon--paytm" data-payment-icon="paytm" aria-current="false"> <span class="visually-hidden"> , </span> </li>
+                                              <li class="payment-icon-list__more" style="    margin-left: 8px;"> <small class="content-box__small-text"> and more… </small> </li>
+                                          </ul> -->
+                                      </div>
+                                  </div>
+                              </div>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body p-4">
+                                      <div><center><svg xmlns="http://www.w3.org/2000/svg" width="163" height="80.9" viewBox="-252.3 356.1 163 80.9" enable-background="new -252.3 356.1 163 80.9"><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-108.9 404.1v30c0 1.1-.9 2-2 2h-120.1c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1" fill="none"/><circle fill="#B2B2B2" cx="-227.8" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-222.2" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-216.6" cy="361.9" r="1.8"/><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-128.7 400.1h36.7m-3.6-4.1l4 4.1-4 4.1" fill="none"/></svg></center></div>
+                                      <p class="text-center">After clicking “Complete order”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.</p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                     </div>   
+
+                     <div class="mt-4">
+                        <h4>Billing address</h4>
+                        <p>Select the address that matches your card or payment method.</p>
+                       </div>
+                     <div class="col-md-12 col-lg-12">
+                        <div class="accordion-item">
+                            <div class="accordion-header" id="heading1">
+                              <div class="accordion-button row m-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                  <div class="col-md-12 col-lg-12 p-0">
+                                      <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> Same as shipping address </label> </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                            <!-- <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                              <div class="accordion-body p-4">
+                                  <div><center><svg xmlns="http://www.w3.org/2000/svg" width="163" height="80.9" viewBox="-252.3 356.1 163 80.9" enable-background="new -252.3 356.1 163 80.9"><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-108.9 404.1v30c0 1.1-.9 2-2 2h-120.1c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1" fill="none"/><circle fill="#B2B2B2" cx="-227.8" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-222.2" cy="361.9" r="1.8"/><circle fill="#B2B2B2" cx="-216.6" cy="361.9" r="1.8"/><path stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" d="M-128.7 400.1h36.7m-3.6-4.1l4 4.1-4 4.1" fill="none"/></svg></center></div>
+                                  <p class="text-center">After clicking “Complete order”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.</p>
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="accordion-item">
+                              <div class="accordion-header" id="heading2">
+                                <div class="accordion-button row m-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <div class="col-md-12 col-lg-12 p-0">
+                                        <div class="d-flex"> <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled style="margin-right: 10px;"> <label class="form-check-label" for="flexRadioDisabled" style="color: black;"> 	Use a different billing address </label> </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                <div class="accordion-body p-4 row">
+                                    <div class="mb-3 col-md-12 col-lg-12">
+                                        <select class="form-select" aria-label="Default select example">
+                                          
+<option data-code="US" value="United States">United States</option>
+<option disabled="disabled" value="---">---</option>
+<option data-code="AF" value="Afghanistan">Afghanistan</option>
+<option data-code="AX" value="Aland Islands">Åland Islands</option>
+<option data-code="AL" value="Albania">Albania</option>
+<option data-code="DZ" value="Algeria">Algeria</option>
+<option data-code="AD" value="Andorra">Andorra</option>
+<option data-code="AO" value="Angola">Angola</option>
+<option data-code="AI" value="Anguilla">Anguilla</option>
+<option data-code="AG" value="Antigua And Barbuda">Antigua &amp; Barbuda</option>
+<option data-code="AR" value="Argentina">Argentina</option>
+<option data-code="AM" value="Armenia">Armenia</option>
+<option data-code="AW" value="Aruba">Aruba</option>
+<option data-code="AC" value="Ascension Island">Ascension Island</option>
+<option data-code="AU" value="Australia">Australia</option>
+<option data-code="AT" value="Austria">Austria</option>
+<option data-code="AZ" value="Azerbaijan">Azerbaijan</option>
+<option data-code="BS" value="Bahamas">Bahamas</option>
+<option data-code="BH" value="Bahrain">Bahrain</option>
+<option data-code="BD" value="Bangladesh">Bangladesh</option>
+<option data-code="BB" value="Barbados">Barbados</option>
+<option data-code="BY" value="Belarus">Belarus</option>
+<option data-code="BE" value="Belgium">Belgium</option>
+<option data-code="BZ" value="Belize">Belize</option>
+<option data-code="BJ" value="Benin">Benin</option>
+<option data-code="BM" value="Bermuda">Bermuda</option>
+<option data-code="BT" value="Bhutan">Bhutan</option>
+<option data-code="BO" value="Bolivia">Bolivia</option>
+<option data-code="BA" value="Bosnia And Herzegovina">Bosnia &amp; Herzegovina</option>
+<option data-code="BW" value="Botswana">Botswana</option>
+<option data-code="BR" value="Brazil">Brazil</option>
+<option data-code="IO" value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option data-code="VG" value="Virgin Islands, British">British Virgin Islands</option>
+<option data-code="BN" value="Brunei">Brunei</option>
+<option data-code="BG" value="Bulgaria">Bulgaria</option>
+<option data-code="BF" value="Burkina Faso">Burkina Faso</option>
+<option data-code="BI" value="Burundi">Burundi</option>
+<option data-code="KH" value="Cambodia">Cambodia</option>
+<option data-code="CM" value="Republic of Cameroon">Cameroon</option>
+<option data-code="CA" value="Canada">Canada</option>
+<option data-code="CV" value="Cape Verde">Cape Verde</option>
+<option data-code="BQ" value="Caribbean Netherlands">Caribbean Netherlands</option>
+<option data-code="KY" value="Cayman Islands">Cayman Islands</option>
+<option data-code="CF" value="Central African Republic">Central African Republic</option>
+<option data-code="TD" value="Chad">Chad</option>
+<option data-code="CL" value="Chile">Chile</option>
+<option data-code="CN" value="China">China</option>
+<option data-code="CX" value="Christmas Island">Christmas Island</option>
+<option data-code="CC" value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option data-code="CO" value="Colombia">Colombia</option>
+<option data-code="KM" value="Comoros">Comoros</option>
+<option data-code="CG" value="Congo">Congo - Brazzaville</option>
+<option data-code="CD" value="Congo, The Democratic Republic Of The">Congo - Kinshasa</option>
+<option data-code="CK" value="Cook Islands">Cook Islands</option>
+<option data-code="CR" value="Costa Rica">Costa Rica</option>
+<option data-code="HR" value="Croatia">Croatia</option>
+<option data-code="CW" value="Curaçao">Curaçao</option>
+<option data-code="CY" value="Cyprus">Cyprus</option>
+<option data-code="CZ" value="Czech Republic">Czechia</option>
+<option data-code="CI" value="Côte d'Ivoire">Côte d’Ivoire</option>
+<option data-code="DK" value="Denmark">Denmark</option>
+<option data-code="DJ" value="Djibouti">Djibouti</option>
+<option data-code="DM" value="Dominica">Dominica</option>
+<option data-code="DO" value="Dominican Republic">Dominican Republic</option>
+<option data-code="EC" value="Ecuador">Ecuador</option>
+<option data-code="EG" value="Egypt">Egypt</option>
+<option data-code="SV" value="El Salvador">El Salvador</option>
+<option data-code="GQ" value="Equatorial Guinea">Equatorial Guinea</option>
+<option data-code="ER" value="Eritrea">Eritrea</option>
+<option data-code="EE" value="Estonia">Estonia</option>
+<option data-code="SZ" value="Eswatini">Eswatini</option>
+<option data-code="ET" value="Ethiopia">Ethiopia</option>
+<option data-code="FK" value="Falkland Islands (Malvinas)">Falkland Islands</option>
+<option data-code="FO" value="Faroe Islands">Faroe Islands</option>
+<option data-code="FJ" value="Fiji">Fiji</option>
+<option data-code="FI" value="Finland">Finland</option>
+<option data-code="FR" value="France">France</option>
+<option data-code="GF" value="French Guiana">French Guiana</option>
+<option data-code="PF" value="French Polynesia">French Polynesia</option>
+<option data-code="TF" value="French Southern Territories">French Southern Territories</option>
+<option data-code="GA" value="Gabon">Gabon</option>
+<option data-code="GM" value="Gambia">Gambia</option>
+<option data-code="GE" value="Georgia">Georgia</option>
+<option data-code="DE" value="Germany">Germany</option>
+<option data-code="GH" value="Ghana">Ghana</option>
+<option data-code="GI" value="Gibraltar">Gibraltar</option>
+<option data-code="GR" value="Greece">Greece</option>
+<option data-code="GL" value="Greenland">Greenland</option>
+<option data-code="GD" value="Grenada">Grenada</option>
+<option data-code="GP" value="Guadeloupe">Guadeloupe</option>
+<option data-code="GT" value="Guatemala">Guatemala</option>
+<option data-code="GG" value="Guernsey">Guernsey</option>
+<option data-code="GN" value="Guinea">Guinea</option>
+<option data-code="GW" value="Guinea Bissau">Guinea-Bissau</option>
+<option data-code="GY" value="Guyana">Guyana</option>
+<option data-code="HT" value="Haiti">Haiti</option>
+<option data-code="HN" value="Honduras">Honduras</option>
+<option data-code="HK" value="Hong Kong">Hong Kong SAR</option>
+<option data-code="HU" value="Hungary">Hungary</option>
+<option data-code="IS" value="Iceland">Iceland</option>
+<option data-code="IN" value="India">India</option>
+<option data-code="ID" value="Indonesia">Indonesia</option>
+<option data-code="IQ" value="Iraq">Iraq</option>
+<option data-code="IE" value="Ireland">Ireland</option>
+<option data-code="IM" value="Isle Of Man">Isle of Man</option>
+<option data-code="IL" value="Israel">Israel</option>
+<option data-code="IT" value="Italy">Italy</option>
+<option data-code="JM" value="Jamaica">Jamaica</option>
+<option data-code="JP" value="Japan">Japan</option>
+<option data-code="JE" value="Jersey">Jersey</option>
+<option data-code="JO" value="Jordan">Jordan</option>
+<option data-code="KZ" value="Kazakhstan">Kazakhstan</option>
+<option data-code="KE" value="Kenya">Kenya</option>
+<option data-code="KI" value="Kiribati">Kiribati</option>
+<option data-code="XK" value="Kosovo">Kosovo</option>
+<option data-code="KW" value="Kuwait">Kuwait</option>
+<option data-code="KG" value="Kyrgyzstan">Kyrgyzstan</option>
+<option data-code="LA" value="Lao People's Democratic Republic">Laos</option>
+<option data-code="LV" value="Latvia">Latvia</option>
+<option data-code="LB" value="Lebanon">Lebanon</option>
+<option data-code="LS" value="Lesotho">Lesotho</option>
+<option data-code="LR" value="Liberia">Liberia</option>
+<option data-code="LY" value="Libyan Arab Jamahiriya">Libya</option>
+<option data-code="LI" value="Liechtenstein">Liechtenstein</option>
+<option data-code="LT" value="Lithuania">Lithuania</option>
+<option data-code="LU" value="Luxembourg">Luxembourg</option>
+<option data-code="MO" value="Macao">Macao SAR</option>
+<option data-code="MG" value="Madagascar">Madagascar</option>
+<option data-code="MW" value="Malawi">Malawi</option>
+<option data-code="MY" value="Malaysia">Malaysia</option>
+<option data-code="MV" value="Maldives">Maldives</option>
+<option data-code="ML" value="Mali">Mali</option>
+<option data-code="MT" value="Malta">Malta</option>
+<option data-code="MQ" value="Martinique">Martinique</option>
+<option data-code="MR" value="Mauritania">Mauritania</option>
+<option data-code="MU" value="Mauritius">Mauritius</option>
+<option data-code="YT" value="Mayotte">Mayotte</option>
+<option data-code="MX" value="Mexico">Mexico</option>
+<option data-code="MD" value="Moldova, Republic of">Moldova</option>
+<option data-code="MC" value="Monaco">Monaco</option>
+<option data-code="MN" value="Mongolia">Mongolia</option>
+<option data-code="ME" value="Montenegro">Montenegro</option>
+<option data-code="MS" value="Montserrat">Montserrat</option>
+<option data-code="MA" value="Morocco">Morocco</option>
+<option data-code="MZ" value="Mozambique">Mozambique</option>
+<option data-code="MM" value="Myanmar">Myanmar (Burma)</option>
+<option data-code="NA" value="Namibia">Namibia</option>
+<option data-code="NR" value="Nauru">Nauru</option>
+<option data-code="NP" value="Nepal">Nepal</option>
+<option data-code="NL" value="Netherlands">Netherlands</option>
+<option data-code="NC" value="New Caledonia">New Caledonia</option>
+<option data-code="NZ" value="New Zealand">New Zealand</option>
+<option data-code="NI" value="Nicaragua">Nicaragua</option>
+<option data-code="NE" value="Niger">Niger</option>
+<option data-code="NG" value="Nigeria">Nigeria</option>
+<option data-code="NU" value="Niue">Niue</option>
+<option data-code="NF" value="Norfolk Island">Norfolk Island</option>
+<option data-code="MK" value="North Macedonia">North Macedonia</option>
+<option data-code="NO" value="Norway">Norway</option>
+<option data-code="OM" value="Oman">Oman</option>
+<option data-code="PK" value="Pakistan">Pakistan</option>
+<option data-code="PS" value="Palestinian Territory, Occupied">Palestinian Territories</option>
+<option data-code="PA" value="Panama">Panama</option>
+<option data-code="PG" value="Papua New Guinea">Papua New Guinea</option>
+<option data-code="PY" value="Paraguay">Paraguay</option>
+<option data-code="PE" value="Peru">Peru</option>
+<option data-code="PH" value="Philippines">Philippines</option>
+<option data-code="PN" value="Pitcairn">Pitcairn Islands</option>
+<option data-code="PL" value="Poland">Poland</option>
+<option data-code="PT" value="Portugal">Portugal</option>
+<option data-code="QA" value="Qatar">Qatar</option>
+<option data-code="RE" value="Reunion">Réunion</option>
+<option data-code="RO" value="Romania">Romania</option>
+<option data-code="RU" value="Russia">Russia</option>
+<option data-code="RW" value="Rwanda">Rwanda</option>
+<option data-code="WS" value="Samoa">Samoa</option>
+<option data-code="SM" value="San Marino">San Marino</option>
+<option data-code="ST" value="Sao Tome And Principe">São Tomé &amp; Príncipe</option>
+<option data-code="SA" value="Saudi Arabia">Saudi Arabia</option>
+<option data-code="SN" value="Senegal">Senegal</option>
+<option data-code="RS" value="Serbia">Serbia</option>
+<option data-code="SC" value="Seychelles">Seychelles</option>
+<option data-code="SL" value="Sierra Leone">Sierra Leone</option>
+<option data-code="SG" value="Singapore">Singapore</option>
+<option data-code="SX" value="Sint Maarten">Sint Maarten</option>
+<option data-code="SK" value="Slovakia">Slovakia</option>
+<option data-code="SI" value="Slovenia">Slovenia</option>
+<option data-code="SB" value="Solomon Islands">Solomon Islands</option>
+<option data-code="SO" value="Somalia">Somalia</option>
+<option data-code="ZA" value="South Africa">South Africa</option>
+<option data-code="GS" value="South Georgia And The South Sandwich Islands">South Georgia &amp; South Sandwich Islands</option>
+<option data-code="KR" value="South Korea">South Korea</option>
+<option data-code="SS" value="South Sudan">South Sudan</option>
+<option data-code="ES" value="Spain">Spain</option>
+<option data-code="LK" value="Sri Lanka">Sri Lanka</option>
+<option data-code="BL" value="Saint Barthélemy">St. Barthélemy</option>
+<option data-code="SH" value="Saint Helena">St. Helena</option>
+<option data-code="KN" value="Saint Kitts And Nevis">St. Kitts &amp; Nevis</option>
+<option data-code="LC" value="Saint Lucia">St. Lucia</option>
+<option data-code="MF" value="Saint Martin">St. Martin</option>
+<option data-code="PM" value="Saint Pierre And Miquelon">St. Pierre &amp; Miquelon</option>
+<option data-code="VC" value="St. Vincent">St. Vincent &amp; Grenadines</option>
+<option data-code="SD" value="Sudan">Sudan</option>
+<option data-code="SR" value="Suriname">Suriname</option>
+<option data-code="SJ" value="Svalbard And Jan Mayen">Svalbard &amp; Jan Mayen</option>
+<option data-code="SE" value="Sweden">Sweden</option>
+<option data-code="CH" value="Switzerland">Switzerland</option>
+<option data-code="TW" value="Taiwan">Taiwan</option>
+<option data-code="TJ" value="Tajikistan">Tajikistan</option>
+<option data-code="TZ" value="Tanzania, United Republic Of">Tanzania</option>
+<option data-code="TH" value="Thailand">Thailand</option>
+<option data-code="TL" value="Timor Leste">Timor-Leste</option>
+<option data-code="TG" value="Togo">Togo</option>
+<option data-code="TK" value="Tokelau">Tokelau</option>
+<option data-code="TO" value="Tonga">Tonga</option>
+<option data-code="TT" value="Trinidad and Tobago">Trinidad &amp; Tobago</option>
+<option data-code="TA" value="Tristan da Cunha">Tristan da Cunha</option>
+<option data-code="TN" value="Tunisia">Tunisia</option>
+<option data-code="TR" value="Turkey">Turkey</option>
+<option data-code="TM" value="Turkmenistan">Turkmenistan</option>
+<option data-code="TC" value="Turks and Caicos Islands">Turks &amp; Caicos Islands</option>
+<option data-code="TV" value="Tuvalu">Tuvalu</option>
+<option data-code="UM" value="United States Minor Outlying Islands">US Outlying Islands</option>
+<option data-code="UG" value="Uganda">Uganda</option>
+<option data-code="UA" value="Ukraine">Ukraine</option>
+<option data-code="AE" value="United Arab Emirates">United Arab Emirates</option>
+<option data-code="GB" value="United Kingdom">United Kingdom</option>
+<option data-code="US" value="United States">United States</option>
+<option data-code="UY" value="Uruguay">Uruguay</option>
+<option data-code="UZ" value="Uzbekistan">Uzbekistan</option>
+<option data-code="VU" value="Vanuatu">Vanuatu</option>
+<option data-code="VA" value="Holy See (Vatican City State)">Vatican City</option>
+<option data-code="VE" value="Venezuela">Venezuela</option>
+<option data-code="VN" value="Vietnam">Vietnam</option>
+<option data-code="WF" value="Wallis And Futuna">Wallis &amp; Futuna</option>
+<option data-code="EH" value="Western Sahara">Western Sahara</option>
+<option data-code="YE" value="Yemen">Yemen</option>
+<option data-code="ZM" value="Zambia">Zambia</option>
+<option data-code="ZW" value="Zimbabwe">Zimbabwe</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3 col-md-6 col-lg-6">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                                    </div>
+                                    <div class="mb-3 col-md-6 col-lg-6">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                                    </div>
+                                    <div class="mb-3 col-md-12 col-lg-12">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Address">
+                                    </div>
+                                    <div class="mb-3 col-md-12 col-lg-12">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apartment, suite, etc. (optional)">
+                                    </div>
+                
+                                    <div class="mb-3 col-md-4 col-lg-4">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="City">
+                                    </div>
+                
+                                    <div class="mb-3 col-md-4 col-lg-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3 col-md-4 col-lg-4">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your pin code">
+                                    </div>
+                
+                                    <div class="mb-3 col-md-12 col-lg-12">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Phone number for order updates">
+                                    </div>
+
+                                </div>
+                              </div>
+                            </div>
+
+                     </div>
+
+                    <div class="col-md-6 col-lg-6 m-auto">
+                        <div class="m-auto"><p><span>Return to cart</span></p></div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 mt-2">    
+                        <div><button type="submit" class="btn btn-dark w-100">Complete order</button></div>
+                    </div>
+                    </div>
+                  </form>
+                  <hr>
+                  <div>
+                    <style> .policy-item a{color: #343333;font-size: 15px;text-decoration: none; margin-right: 10px;}</style>
+                    <ul class="list-unstyled d-flex">
+                        <li class="policy-item">
+                          <a href="">Refund policy</a>
+                        </li>
+                        <li class="policy-item">
+                          <a href="">Shipping policy</a>
+                        </li>
+                        <li class="policy-item">
+                          <a href="">Privacy policy</a>
+                        </li>
+                        <li class="policy-item">
+                          <a href="">Terms of service</a>
+                        </li>
+                    </ul>
+                  </div>
+              </div>  
+            </div>
+            <div class="col-md-6 col-lg-6" style="background-color: #fafafa;">
+                <div class="row mb-3">
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2">
+                        <span class="product-thumbnail__quantity" aria-hidden="true">1</span>
+                        <img src="images/apply.jpg" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-8 col-lg-8">
+                        <p><b>Square Tethered Metallic Table (Set of 2)</b></p>
+                        <p>Metal Table</p>
+                    </div>
+                    <div class="col-3 col-sm-3 col-md-2 col-lg-2"><p><span>₹12,999.00</span></p></div>
+                </div>
+                <hr>
+                <div>
+                    <form>
+                        <div class="mb-3 d-flex">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Use FESTIVE for 20% Off on Select Products. Sale ends Soon" style="margin-right: 20px;">
+                          <button type="submit" class="btn btn-secondary">Apply</button>
+                        </div>
+                    </form>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="">
+                        <p>Subtotal</p>
+                        <p>Shipping</p>
+                    </div>
+                    </div>
+
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="float-end">
+                        <p><span>₹12,999.00</span></p>
+                        <p>Calculated at next step</p>
+                    </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="">
+                        <p><b>Total</b></p>
+                        <p>Including ₹1,392.75 in taxes</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="float-end">
+                        <p>INR <span style="font-size: 27px;">₹12,999.00</span></p>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+
+</body>
+</html>    
